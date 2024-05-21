@@ -1,0 +1,16 @@
+.image {
+
+    height: auto;
+    width: 300px;
+   
+}
+
+#groslogo {
+    height: auto;
+    width: 500px;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
