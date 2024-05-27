@@ -2,129 +2,180 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Progra Passion  - Le site des passionnés de programamtion</title>
+        <script src="js\java.js"></script>
     </head>
     <body>
-        <header>
-            <img src="./images/logo/prograpassion.png" alt="Logo de Progra Passion" id="groslogo">
-            <nav>
+        <div class="contener">
+            <header>
+            <div>
+                <img src="./images/logo/prograpassion.png" alt="Logo de Progra Passion" >
+                <h1>La Programation</h1>
+            
                 <ul>
-                    <li id="langage"><h1>Les meilleurs langages</h1></li>
-                    <li id="article"><h1>Articles populaires</h1></li>
-                    <li id="evenement"><h1>Les événements  à venir</h1></li>
+                    <li onclick="javascript:AfficheContenu('contenu1');"><h1>Les meilleurs langages</h1></li>
+                    <li onclick="javascript:AfficheContenu('contenu2');"><h1>Articles populaires</h1></li>
+                    <li onclick="javascript:AfficheContenu('contenu3');"><h1>Les événements  à venir</h1></li>
+                    <li><a href="./inscription.html"><h1>S'inscrire</h1></a></li>
                 </ul>
-               
+            </div>
+            <nav> 
+                <h4> Quel langage apprendre en 2024 ?
+                        Débutant ou expert, tout le monde y trouve son compte</h4>
+                <input type="text" size="20">
+                <a href="#">Rechercher</a>
+                <p>Plus de 3500 développeurs nous ont déjà rejoints</p>
             </nav>
-        </header> 
-        <div id=""></div>
-    
-        <nav> <h4> Quel langage apprendre en 2024 ?
-                    Débutant ou expert, tout le monde y trouve son compte</h4>
-            <h1>S'inscrire</h1>
-            <input type="text" size="20">
-            <a href="#">Rechercher</a>
-            <p>Plus de 3500 développeurs nous ont déjà rejoints</p>
-        </nav>
 
+            </header> 
 
-        <div class="Les meilleurs langages">
-            <h1>Les meilleurs langages</h1>
+            <div class="contenu" id="contenu1">
+            <u><h1>Les meilleurs langages</h1></u><br>
             
             <img src="./images/langages/html.jpg" alt="html" class="image">
-            <h3>Le HTML</h3>
-            <p>Le coeur du web</p>
+            <img src="images\logo\HTML.png" alt="htmllogo" class="logo">
+            <u><h3>Le HTML</h3></u>
+            <p>Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5,
+                est le langage de balisage conçu pour représenter les pages web.
+                Ce langage permet d’écrire de l’hypertexte, de structurer sémantiquement une page web,
+                de mettre en forme du contenu, de créer des formulaires de saisie ou encore d’inclure des ressources multimédias
+                dont des images, des vidéos, et des programmes informatiques. Le HTML offre également la possibilité de créer
+                des documents interopérables avec des équipements très variés et conformément aux exigences de l’accessibilité du web.
+                Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS).
+                 HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert.</p>
             <br><br>
+
             <img src="./images/langages/css.jpg" alt="css" class="image">
-            <h3>Le CSS</h3>
-            <p>Vous verez le monde autrement</p>
+            <img src="images\logo\css.png" alt="csslogo" class="logo">
+            <u><h3>Le CSS</h3></u>
+            <p>Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.</p>
             <br><br>
+
             <img src="./images/langages/javascript.jpg" alt="javascript" class="image">
-            <h3>Le javascript</h3>
-            <p>Tout devient dynamique</p>
+            <img src="images\logo\JavaScript.png" alt="jslogo" class="logo">
+            <u><h3>Le javascript</h3></u>
+            <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les développeurs web4. Une grande majorité des sites web l'utilisent5, et la majorité des navigateurs web disposent d'un moteur JavaScript6 pour l'interpréter.</p> <br>
+            <p>JavaScript est aussi employé pour les serveurs Web7 avec l'utilisation de Node.js8 ou de Deno9.
+                JavaScript a été créé en 1995 par Brendan Eich et intégré au navigateur web Netscape Navigator 2.0. L'implémentation concurrente de JavaScript par Microsoft dans Internet Explorer jusqu'à sa version 9 se nommait JScript, tandis que celle d'Adobe Systems se nommait ActionScript. JavaScript a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma International dans le standard ECMA-262.</p> <br>
+                <p>La version en vigueur de ce standard depuis juin 2022 est la 13e édition.                
+                C'est un langage orienté objet à prototype : les bases du langage et ses principales interfaces sont fournies par des objets. Cependant, à la différence d'un langage orienté objets à classes, les objets de base ne sont pas des instances de classes. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet, impératif et fonctionnel.
+                JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec plus de deux millions de paquets en septembre 202210.e</p>
             <br><br>
+
             <img src="./images/langages/C.png" alt="C" class="image">
-            <h3>Le C</h3>
-            <p>Rapide et optimisé</p>
+            <img src="./images/logo/C.png" alt="Clogo" class="logo">
+            <u><h3>Le C</h3></u>
+            <p>C est un langage de programmation impératif, généraliste et de bas niveau. Inventé au début des années 1970 pour réécrire Unix, C'est devenu un des langages les plus utilisés, encore de nos jours. De nombreux langages plus modernes comme C++, C#, Java et PHP ou JavaScript ont repris une syntaxe similaire au C et reprennent en partie sa logique. C offre au développeur une marge de contrôle importante sur la machine (notamment sur la gestion de la mémoire) et est de ce fait utilisé pour réaliser les « fondations » (compilateurs, interpréteurs, …) de ces langages plus modernes.</p>
             <br><br>
+
+
             <img src="./images/langages/C++.png" alt="C++" class="image">
-            <h3>Le C++</h3>
-            <p>Les avantages du C, la POO en plus</p>
+            <img src="./images/logo/C++.png" alt="C++logo" class="logo">
+            <u><h3>Le C++</h3></u>
+            <p>C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes, dont la programmation procédurale, la programmation orientée objet et la programmation générique. Ses bonnes performances, et sa compatibilité avec le langage C en font un des langages de programmation les plus utilisés dans les applications où la performance est critique.
+               Créé initialement par Bjarne Stroustrup dans les années 1980, le langage C++ est aujourd'hui normalisé par l'ISO. Sa première normalisation date de 1998 (ISO/CEI 14882:1998), ensuite amendée par l'erratum technique de 2003 (ISO/CEI 14882:2003). Une importante mise à jour a été ratifiée et publiée par l'ISO en septembre 2011 sous le nom de ISO/IEC 14882:2011, ou C++113. Depuis, des mises à jour sont publiées régulièrement : en 2014 (ISO/CEI 14882:2014, ou C++144), en 2017 (ISO/CEI 14882:2017, ou C++175) puis en 2020 (ISO/IEC 14882:2020, ou C++206).</p>
             <br><br>
+
+
             <img src="./images/langages/python.jpg" alt="python" class="image">
-            <h3>Le python </h3>
-            <p>Champion de la décalaration implicite</p>
+            <img src="./images/logo/python.jpg" alt="logopython" class="logo">
+            <u><h3>Le python </h3></u>
+            <p>Python est un langage de programmation interprété, multiparadigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
+                Le langage Python est placé sous une licence libre proche de la licence BSD et fonctionne sur la plupart des plateformes informatiques, des smartphones aux ordinateurs centraux, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.
+                Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux concepts de base de la programmation4. Selon l'Index TIOBE, notamment en raison de son efficacité pour l'apprentissage automatique, sa popularité va croissante ; et en 2022 n'a toujours pas montré de signe de ralentissement5.</p>
+            <br><br>
 
-            <p>Afficher plus</p>
-        </div>
-        <div>
-            Articles populaires     
-            <BR>               
-            <img src="./images/articles/mac.jpg" alt="mac" class="image">
-            <BR>    
-            Mac ou PC ?
-            <BR>    
-            La guerre est déclarée
-            <br>
+            <img src="./images/langages/php.jpg" alt="php" class="image">
+            <img src="./images/logo/PHP.png" alt="logoPHP" class="logo">
+            <u><h3>Le PHP</h3></u>
+            <p>PHP: Hypertext Preprocessor6, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage de programmation libre7, principalement utilisé pour produire des pages Web dynamiques via un serveur web6, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.
+            PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook et Wikipédia8. Il est considéré comme une des bases de la création de sites web dits dynamiques mais également des applications web.</p>
+            <br><br>
+
+            <img src="./images/langages/Csharp.png" alt="C#" class="image">
+            <img src="./images/logo/C_Sharp.png" alt="logoC#" class="logo">
+            <u><h3>C#</h3></u>
+            <p>C# (C sharp) est un langage de programmation orientée objet, commercialisé par Microsoft depuis 20022 et destiné à développer sur la plateforme Microsoft .NET, au même titre que d’autres langages liés à cette plateforme (ex. : VB .NET, J#, etc.).
+                C# est dérivé du C++ et très proche du Java dont il reprend la syntaxe générale ainsi que les concepts, y ajoutant des notions telles que la surcharge des opérateurs, les indexeurs (en) et les délégués. Il est utilisé notamment pour développer des applications web sur la plateforme ASP.NET, ainsi que des jeux vidéo avec le moteur de jeux Unity et Godot3.</p>
+            <br><br>
+
+            <img src="./images/langages/SQL.png" alt="SQL" class="image">
+            <img src="./images/logo/SQL.png" alt="SqlLogo" class="logo">
+            <u><h3>SQL</h3></u>
+            <p> SQL (Structured Query Language, « langage de requêtes structurées ») est un langage informatique 
+                normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL
+                permet de rechercher,d'ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles.</p>
+            <br><br>
+        
+            </div>
+            <div class="contenu" id="contenu2">
+            
+            <u><h1>Articles populaires </h1></u>  
+            <br>             
+            <img src="./images/articles/mac.jpg" alt="mac" class="image">    
+            <p>Mac ou PC ? La guerre est déclarée</p>
+            <br><br>  
+            
             <img src="./images/articles/rust.jpg" alt="rust" class="image">
-            <BR>    
-            Découvrez Rust
-            <BR>    
-            Les avantages du C++ alliés à la sécurité 
-            <br>
-            <img src="./images/articles/noCode.jpg" alt="nocode" class="image">
-            <BR>    
-            Quel avenir pour le code ?
-            <BR>    
-            Le no code va t'il changer la vie des développeurs
-            <br>
-        </div>
-        <div>
-            <h3>Les événements à venir</h3>
-            <BR>
-            <img src="./images/evenement/night.jpg" alt="night" class="image">
-            <BR>
-            La nuit du code
-            <BR>
-            <img src="./images/evenement/manager.jpg" alt="manager" class="image">
-            <BR>
-            Formation managers des SI
-            <BR>
-            <img src="./images/evenement/framework.jpg" alt="framework" class="image">
-            <BR>
-            Présentation du dernier framework JS : Last js
-            <BR>
-            <img src="./images/evenement/hacking.jpg" alt="hacking" class="image">
-            <BR>
-            Marathon du Hacking
-            <BR>
-            <img src="./images/evenement/brain.jpg" alt="brain" class="image">
-            <BR>
-            Découverte : Le Brain Driven Development
-            <BR>
-            <img src="./images/evenement/vim.jpg" alt="vim" class="image">
-            <BR>
-            La foire au Vim
-            <BR>
-        </div>
+            <p>  Découvrez Rust. Les avantages du C++ alliés à la sécurité.</p>
+            <br><br>
 
-        <footer>
-            A propos
+            <img src="./images/articles/noCode.jpg" alt="nocode" class="image">
+            <p>Quel avenir pour le code ? Le no code va t'il changer la vie des développeurs</p>
+
+            </div>
+            <div class="contenu" id="contenu3">
+            
+            <u><h1>Les événements à venir</h1></u>
+            <br>
+            <img src="./images/evenement/night.jpg" alt="night" class="image">
+            <p>La nuit du code</p>
+            <br><br>
+            
+            <img src="./images/evenement/manager.jpg" alt="manager" class="image">
+            <p>Formation managers des SI</p>
+            <br><br>
+
+            <img src="./images/evenement/framework.jpg" alt="framework" class="image">
+            <p>Présentation du dernier framework JS : Last js</p>
+            <br><br>
+            
+            <img src="./images/evenement/hacking.jpg" alt="hacking" class="image">
+            <p>Marathon du Hacking</p>
+            <br><br>           
+            
+            <img src="./images/evenement/brain.jpg" alt="brain" class="image">
+            <p>Découverte : Le Brain Driven Development</p>
+            <br><br>
+
+            <img src="./images/evenement/vim.jpg" alt="vim" class="image">
+            <p>La foire au Vim</p>
+            <br><br>
+            
+           
+            </div>
+        
+            
+            <footer>
+            A propos:
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
                 <li><a href="#">Conditions générales de vente</a></li>
                 <li><a href="#">Données et confidentialité</a></li>
             </ul>
-            Nos valeurs
+            Nos valeurs:
             <ul>
                 <li><a href="#">Charte qualité</a></li>
                 <li><a href="#">Parlez nous de votre expérience</a></li>
             </ul>
-            Assistance
+            Assistance:
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
                 <li><a href="#">Nous contacter</a></li>
             </ul>
-        </footer>
+            </footer>
+        </div>
     </body>
+   
 </html>

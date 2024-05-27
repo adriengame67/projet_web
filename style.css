@@ -1,20 +1,166 @@
 .image {
 
     height: auto;
-    width: 400px;
+    width: 300px;
 }
 
-#groslogo {
+
+
+* {
+    margin: 0;/* Réinitialisation des marges et des paddings par défaut */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contener {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6448d3; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    padding: 1rem; /* Espacement interne */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; */
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div h1{
+    padding: 20px;
+}
+
+header div ul {
+    display: flex;
+    list-style: none;
+}
+
+header div ul li {
+    margin: 5px;
+    border:solid 2px #082d8c;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor:pointer;
+
+}
+
+header div ul li h1 {
+    font-size: 1.25rem;    
+}
+
+header div ul li a, header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.contenu {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+.contenu nav {
+    margin-bottom: 2rem;
+}
+
+.contenu nav h4, .contenu nav h1 {
+    margin-bottom: 1rem;
+}
+
+.contenu nav input, .contenu nav a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contenu .Les meilleurs langages, .contenu > div {
+    margin-bottom: 2rem;
+}
+
+.contenu img.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenu img.logo{
     height: auto;
     width: 200px;
 }
 
-
-body {
-    background-color: rgb(255, 255, 255);
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-header{
-    display: flex;
-    position: fixed;
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header div ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header div ul li {
+        margin: 0.5rem 0;
+    }
+
+    .contenu div input, .contenu div a {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul {
+        margin-bottom: 1rem;
+    }
 }
