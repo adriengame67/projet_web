@@ -10,3 +10,9 @@ function AfficheContenu(divId)
         divToShow.style.display = "block" ;
                     
     }
+
+function inscrit(event) {
+    event.preventDefault();
+    alert("Vous êtes bien inscrit, merci de nous avoir rejoint.");
+    return false;
+}

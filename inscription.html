@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style2.css">
         <title>Inscription Progra Passion</title>
+        <script src="js/java.js"></script>
     </head>
     <body>
         <div class="container">
@@ -12,7 +13,7 @@
             </header>
             <main>
                 <h2>Inscription</h2>
-                <form action="#" method="POST">
+                <form action="#" method="POST" onsubmit="return inscrit(event)">
                     <label for="username">Nom d'utilisateur:</label>
                     <input type="text" id="username" name="username" required>
     
